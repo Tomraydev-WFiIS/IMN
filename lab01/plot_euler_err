@@ -1,0 +1,12 @@
+set term png 
+
+set out "z1.2.png"
+
+set xl "t"
+set yl "y(t)"
+
+
+set title "Metoda Eulera - Błąd globalny"
+plot "dt_1_err.dat" u 1:2 w l t "dt=0.01", \
+    "dt_2_err.dat" u 1:2 w l t "dt=0.1", \
+    "dt_3_err.dat" u 1:2 w l t "dt=1"

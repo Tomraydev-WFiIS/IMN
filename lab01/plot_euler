@@ -1,0 +1,13 @@
+set term png 
+
+set out "z1.1.png"
+
+set xl "t"
+set yl "y(t)"
+
+
+set title "Metoda Eulera - Rozwiązanie"
+plot "dt_1.dat" u 1:2 w p pt 6 t "dt=0.01", \
+    "dt_2.dat" u 1:2 w p pt 6 t "dt=0.1", \
+    "dt_3.dat" u 1:2 w p pt 6 t "dt=1", \
+    "dt_a.dat" u 1:2 w p pt 6 ps 0.2 t "analityczne"
