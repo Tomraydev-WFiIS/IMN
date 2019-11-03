@@ -1,1 +1,1 @@
-# IMN
+# Inżynierskie Metody Numeryczne
