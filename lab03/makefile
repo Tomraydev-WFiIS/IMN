@@ -22,3 +22,6 @@ clean:
 					
 run:
 	./$(NAME)
+
+plot:
+	gnuplot plot*

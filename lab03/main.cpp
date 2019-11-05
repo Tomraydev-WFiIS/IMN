@@ -15,7 +15,7 @@
 #define dt0 1.0
 #define S 0.75
 #define p 2.0
-double  TMAX = 40;
+double TMAX = 40;
 double ALFA = 5;
 
 
