@@ -1,6 +1,6 @@
 # if no arguments
 if [[ $# -eq 0 ]] ; then
-    echo 'Provide exactly one argument <lab_number>'
+    echo -e 'Provide exactly one argument <lab_number> eg:\n./archive.sh 1'
     exit 1
 fi
 

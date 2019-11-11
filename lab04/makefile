@@ -24,4 +24,6 @@ run:
 	./$(NAME)
 
 plot:
-	gnuplot plot*
+	gnuplot plot_err.gnu
+	gnuplot plot_integral.gnu
+	gnuplot plot_map.gnu
