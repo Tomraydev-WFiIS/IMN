@@ -1,5 +1,12 @@
+# compressed files
 *.zip
 *.gz
 *.tar
 
+# images
+*.png
+*.svg
+
+# config files
 .vscode/
+
