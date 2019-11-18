@@ -2,6 +2,7 @@
 
 set terminal svg
 
+reset
 set output "map_16.svg"
 set xlabel "x"
 set ylabel "y"
@@ -9,7 +10,7 @@ set title "k=16"
 
 reset
 set pm3d map
-set palette defined (-1 "blue", 0 "green", 1 "red")
+set palette defined ( 0 "blue", 4 "cyan", 5 "green", 6 "yellow", 10 "red" )
 set size ratio -1
 
 splot [0:30][0:30] "maps.dat" index 0 using 1:2:3
@@ -21,7 +22,7 @@ set ylabel "y"
 set title "k=8"
 
 set pm3d map
-set palette defined (0 "blue", 5 "green", 10 "red")
+set palette defined ( 0 "blue", 4 "cyan", 5 "green", 6 "yellow", 10 "red" )
 set size ratio -1
 
 splot [0:30][0:30] "maps.dat" index 1 using 1:2:3
@@ -34,7 +35,7 @@ set ylabel "y"
 set title "k=4"
 
 set pm3d map
-set palette defined (0 "blue", 5 "green", 10 "red")
+set palette defined ( 0 "blue", 4 "cyan", 5 "green", 6 "yellow", 10 "red" )
 set size ratio -1
 
 splot [0:30][0:30] "maps.dat" index 2 using 1:2:3
@@ -47,7 +48,7 @@ set ylabel "y"
 set title "k=2"
 
 set pm3d map
-set palette defined (0 "blue", 5 "green", 10 "red")
+set palette defined ( 0 "blue", 4 "cyan", 5 "green", 6 "yellow", 10 "red" )
 set size ratio -1
 
 splot [0:30][0:30] "maps.dat" index 3 using 1:2:3
@@ -60,7 +61,7 @@ set ylabel "y"
 set title "k=1"
 
 set pm3d map
-set palette defined (0 "blue", 5 "green", 10 "red")
+set palette defined ( 0 "blue", 4 "cyan", 5 "green", 6 "yellow", 10 "red" )
 set size ratio -1
 
 splot [0:30][0:30] "maps.dat" index 4 using 1:2:3
