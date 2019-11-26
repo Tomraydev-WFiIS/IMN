@@ -1,5 +1,5 @@
-CXX = g++
-CXXFLAGS = -lm -pedantic -g
+CXX = gcc
+CXXFLAGS = -lm
 OBJS = main.o
 NAME = a.out
 
@@ -9,7 +9,7 @@ $(NAME): $(OBJS)
 	$(CXX)  -o $@  $^ $(CXXFLAGS)
 
 
-main.o: main.cpp
+main.o: main.c
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 			
 .PHONY: clean
