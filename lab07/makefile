@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -lm
+CXXFLAGS = -lm  -pedantic -g
 OBJS = main.o
 NAME = a.out
 
@@ -9,7 +9,7 @@ $(NAME): $(OBJS)
 	$(CXX)  -o $@  $^ $(CXXFLAGS)
 
 
-main.o: main.c
+main.o: main.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 			
 .PHONY: clean
@@ -17,11 +17,13 @@ main.o: main.c
 clean:
 	rm -f *o
 	rm -f ./$(NAME)
-	rm *.dat
-	rm *.png *.svg
+	rm *.dat || true
+	rm *.png || true
+	rm *.svg || true
+	rm *.txt || true
 					
 run:
 	./$(NAME)
 
 plot:
-	gnuplot plot*
+	echo *.plot | xargs -n 1 gnuplot
